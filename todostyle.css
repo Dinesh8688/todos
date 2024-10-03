@@ -55,3 +55,18 @@ body{
     margin-left: 20px;
     border: none;
 }
+@media all and (max-width:500px){
+    .continer{
+        width: 100%;
+    }
+    .searching input,.adding input{
+        font-size: 15px;
+    }
+    .adding button{
+        height: 33px;
+    }
+    .display{
+        max-width: 70vw;
+        max-height: 7vh;
+    }
+}

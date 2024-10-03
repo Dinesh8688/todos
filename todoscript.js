@@ -48,6 +48,7 @@ const renderTodos = function(todos,filters){
 
         const smalldiv = document.createElement('div')
         smalldiv.style.width = '200px'
+        smalldiv.className = 'smalldiv'
 
         const divTag = document.createElement('div')
         divTag.class = 'divTag'
@@ -60,6 +61,7 @@ const renderTodos = function(todos,filters){
         divTag.style.outline= '1px solid grey'
         divTag.style.marginBottom = '10px'
         divTag.style.backgroundColor = 'grey'
+        divTag.className = 'display'
         
         const ele = document.createElement('p')
         ele.style.fontSize = '20px'
@@ -85,6 +87,7 @@ const renderTodos = function(todos,filters){
         deleteTodo.style.backgroundColor = 'hsl(0 0% 0%)'
         deleteTodo.style.color = 'white'
         deleteTodo.style.border = 'none'
+        deleteTodo.className = 'delete'
         
         smalldiv.append(completed)
         smalldiv.appendChild(ele)
